@@ -1,4 +1,4 @@
-// Ch 4 Programming Project.cpp : 
+// Ch 4 Programming Project.cpp : days in a month
 
 #include <iostream> 
 
