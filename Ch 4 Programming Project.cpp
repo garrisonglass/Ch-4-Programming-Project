@@ -41,7 +41,7 @@ int main()
             cout << "Package too heavy" << endl;; // Output for packages > 20kg  
             return 0;
         }
-        cout << "The shipping cost for a package weighing " << weight << " kg is $" << shippingCost << " per 500  miles." << endl;
+        cout << "The shipping cost for a package weighing " << weight << " kg is $" << shippingCost << " per 500 miles." << endl;
     }
     cout << "Enter distance in miles\n";
     cin >> distance;
