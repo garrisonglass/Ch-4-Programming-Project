@@ -48,19 +48,19 @@ int main()
     }
     else
     {
-        if (month == 1)
+        if (month == 1)//for 1st
         {
             cout << "The number of days in the " << month << "st month of year " << year << " is: " << days << endl;
         }
-        else if (month == 2)
+        else if (month == 2)//for 2nd
         {
             cout << "The number of days in the " << month << "nd month of year " << year << " is: " << days << endl;
         }
-        else if (month == 3)
+        else if (month == 3)//for 3rd
         {
             cout << "The number of days in the " << month << "rd month of year " << year << " is: " << days << endl;
         }
-        else
+        else//for all others
         {
             cout << "The number of days in the " << month << "th month of year " << year << " is: " << days << endl;
         }
