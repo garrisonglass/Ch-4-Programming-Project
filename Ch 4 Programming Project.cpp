@@ -21,7 +21,8 @@ int main() {
         cout << "Enter the radius of the circle: ";
         cin >> radius;
         //Input validation
-        if (radius < 0) {
+        if (radius <= 0) 
+        {
             cout << "Radius cannot be negative.\n";
         }
         else {
@@ -36,10 +37,12 @@ int main() {
         cout << "Enter the length and width of the rectangle: ";
         cin >> length >> width;
         //Input validation
-        if (length < 0 || width < 0) {
-            cout << "Length and width cannot be negative.\n";
+        if (length <= 0 || width <= 0) 
+        {
+            cout << "Length and width cannot be less than or equal to zero.\n";
         }
-        else {
+        else 
+        {
             double area = length * width;
             cout << "The area of the rectangle is: " << area << endl;
         }
@@ -51,10 +54,12 @@ int main() {
         cout << "Enter the base and height of the triangle: ";
         cin >> base >> height;
         //input validation, 
-        if (base < 0 || height < 0) {
-            cout << "Base and height cannot be negative.\n";
+        if (base <= 0 || height <= 0) 
+        {
+            cout << "Base and height cannot be less than or equal to zero.\n";
         }
-        else {
+        else 
+        {
             double area = 0.5 * base * height;
             cout << "The area of the triangle is: " << area << endl;
         }
@@ -64,7 +69,8 @@ int main() {
         //Quit 
         cout << "Winners never quit and quitters never win.\n";
     }
-    else {
+    else 
+    {
         //Invalid choice 
         cout << "Is " << choice << " between 1-4? No?\n";
     }
