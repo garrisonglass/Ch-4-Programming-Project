@@ -14,7 +14,8 @@ int main() {
     cout << "Enter your choice (1-4): ";
     cin >> choice;
 
-    if (choice == 1) {
+    if (choice == 1) 
+    {
         //Area of a Circle 
         double radius;
         cout << "Enter the radius of the circle: ";
@@ -28,7 +29,8 @@ int main() {
             cout << "The area of the circle is: " << area << endl;
         }
     }
-    else if (choice == 2) {
+    else if (choice == 2) 
+    {
         //Area of a Rectangle 
         double length, width;
         cout << "Enter the length and width of the rectangle: ";
@@ -42,7 +44,8 @@ int main() {
             cout << "The area of the rectangle is: " << area << endl;
         }
     }
-    else if (choice == 3) {
+    else if (choice == 3) 
+    {
         //Area of a Triangle 
         double base, height;
         cout << "Enter the base and height of the triangle: ";
@@ -56,9 +59,10 @@ int main() {
             cout << "The area of the triangle is: " << area << endl;
         }
     }
-    else if (choice == 4) {
+    else if (choice == 4) 
+    {
         //Quit 
-        cout << "Winner never quit and quitters never win.\n";
+        cout << "Winners never quit and quitters never win.\n";
     }
     else {
         //Invalid choice 
