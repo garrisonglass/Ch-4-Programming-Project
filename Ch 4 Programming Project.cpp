@@ -5,13 +5,13 @@
 using namespace std;
 
 // Function to check if a year is a leap year  
-bool isLeapYear(int year)
+bool LeapYear(int year)
 {
     return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
 
 // Function to get the number of days in a month  
-int getDaysInMonth(int month, int year)
+int DaysInMonth(int month, int year)
 {
     switch (month)
     {
@@ -21,7 +21,7 @@ int getDaysInMonth(int month, int year)
     case 4: case 6: case 9: case 11:
         return 30;
     case 2:
-        return isLeapYear(year) ? 29 : 28;
+        return LeapYear(year) ? 29 : 28;
     default:
         return -1;//Invalid month  
     }
@@ -36,8 +36,8 @@ int main()
     cout << "Enter year: ";
     cin >> year;
 
-    int days = getDaysInMonth(month, year);
-
+    int days = DaysInMonth(month, year);
+    //Input validation
     if (days == -1)
     {
         cout << "That's not a real month!" << endl;
